@@ -1,4 +1,3 @@
-// routes/genreRoutes.js
 import { Router } from 'express';
 import { createGenre, updateGenre, deleteGenre, listGenres } from '../controller/genreController.js';
 import {

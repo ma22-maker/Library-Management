@@ -5,7 +5,7 @@ const userHistorySchema = new mongoose.Schema({
   records: [{
     bookId: { type: mongoose.Schema.Types.ObjectId, ref: 'Book', required: true },
     rentedDate: { type: Date, required: true },
-    returnDate: { type: Date, default: null } // Initially null, set when the book is returned
+    returnDate: { type: Date, default: null } 
   }]
 });
 

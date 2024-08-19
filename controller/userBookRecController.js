@@ -2,6 +2,7 @@ import Book from "../model/book.js";
 import UserBookRecord from "../model/userBookRec.js";
 import UserHistory from "../model/userHistory.js";
 
+//user rents a book
 export const rentBook = async (req, res) => {
   const { userId, bookId } = req.body;
 
@@ -42,6 +43,8 @@ export const rentBook = async (req, res) => {
   }
 };
 
+
+//user returns the book back
 export const giveBackBook = async (req, res) => {
   try {
     const { userId, bookId } = req.body;
@@ -85,6 +88,7 @@ export const giveBackBook = async (req, res) => {
   }
 };
 
+//getting the user history (specific user)
 export const getUserHistory = async (req, res) => {
   const { userId } = req.params;
 

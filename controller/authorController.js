@@ -3,7 +3,6 @@ import Book from "../model/book.js"
 import { validationResult } from 'express-validator';
 
 // List all authors or retrieve a specific author by ID
-// List all authors or retrieve a specific author by ID
 export const listAuthorsOrGetAuthorByID = async (req, res) => {
   const { AuthorId } = req.params;
 
